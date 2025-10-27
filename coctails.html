@@ -1,1 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коктейльная карта - Пить и Танцевать | Барные услуги</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Пить и <span>Танцевать</span></a>
+            
+            <button class="mobile-menu-btn">☰</button>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="cocktails.html" class="active">Коктейльная карта</a></li>
+                    <li><a href="kitchen.html">Кухня</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="contact-top">
+                <a href="tel:+79773001608" class="phone-link">+7 977-300-16-08</a>
+                <button class="whatsapp-btn" onclick="openWhatsApp()">Написать в WhatsApp</button>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero" style="height: 60vh; min-height: 400px;">
+        <div class="container hero-content">
+            <h1 class="gsap-reveal slide-from-bottom">Коктейльная карта</h1>
+            <p class="gsap-reveal slide-from-bottom">Более 50 авторских и классических коктейлей для вашего мероприятия от профессиональных барменов</p>
+        </div>
+    </section>
+
+    <!-- Cocktails Section -->
+    <section class="cocktails">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="gsap-reveal slide-from-bottom">Наши коктейли</h2>
+                <p class="gsap-reveal slide-from-bottom" style="text-align: center; color: var(--text-gray); max-width: 800px; margin: 0 auto;">
+                    Каждый коктейль готовится из премиальных ингредиентов с соблюдением всех традиций барного искусства
+                </p>
+            </div>
+            
+            <div class="cocktail-tabs">
+                <button class="cocktail-tab active" data-tab="alcoholic">Алкогольные коктейли</button>
+                <button class="cocktail-tab" data-tab="non-alcoholic">Безалкогольные коктейли</button>
+                <button class="cocktail-tab" data-tab="classic">Классические коктейли</button>
+                <button class="cocktail-tab" data-tab="author">Авторские коктейли</button>
+            </div>
+            
+            <!-- Алкогольные коктейли -->
+            <div class="cocktail-content active" id="alcoholic-content">
+                <div class="cocktail-grid">
+                    <div class="cocktail-card visible">
+                        <h3 class="cocktail-name">Лонг Айленд Айс Ти</h3>
+                        <p class="cocktail-ingredients">Водка, джин, ром, текила, трипл сек, лимонный сок, кола</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Лонг Айленд</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cocktail-card visible">
+                        <h3 class="cocktail-name">Дайкири</h3>
+                        <p class="cocktail-ingredients">Белый ром, сахарный сироп, лаймовый сок</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Дайкири</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cocktail-card visible">
+                        <h3 class="cocktail-name">Мятный экстази</h3>
+                        <p class="cocktail-ingredients">Водка, ликер мяты, лимонный сок, содовая</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Мятный экстази</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cocktail-card visible">
+                        <h3 class="cocktail-name">Черный русский</h3>
+                        <p class="cocktail-ingredients">Водка, кофейный ликер</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Черный русский</div>
+                        </div>
+                    </div>
+
+                    <div class="cocktail-card visible">
+                        <h3 class="cocktail-name">Том Колинз</h3>
+                        <p class="cocktail-ingredients">Джин, лимонный сок, сахарный сироп, содовая</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Том Колинз</div>
+                        </div>
+                    </div>
+
+                    <div class="cocktail-card visible">
+                        <h3 class="cocktail-name">Вайт Леди</h3>
+                        <p class="cocktail-ingredients">Джин, куантро, лимонный сок</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Вайт Леди</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Безалкогольные коктейли -->
+            <div class="cocktail-content" id="non-alcoholic-content">
+                <div class="cocktail-grid">
+                    <div class="cocktail-card">
+                        <h3 class="cocktail-name">Манго-маракуя</h3>
+                        <p class="cocktail-ingredients">Сок манго, пюре маракуйи, лайм, содовая, сироп ванили</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Манго-маракуя</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cocktail-card">
+                        <h3 class="cocktail-name">Грейпфрут-соленая карамель</h3>
+                        <p class="cocktail-ingredients">Сок грейпфрута, сироп соленой карамели, содовая, розмарин</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Грейпфрут-карамель</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cocktail-card">
+                        <h3 class="cocktail-name">Малиновый рассвет</h3>
+                        <p class="cocktail-ingredients">Пюре малины, лимонный сок, гренадин, содовая, мята</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Малиновый рассвет</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cocktail-card">
+                        <h3 class="cocktail-name">Мохито безалкогольный</h3>
+                        <p class="cocktail-ingredients">Лайм, мята, сахарный сироп, содовая, дробленый лед</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Мохито</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Классические коктейли -->
+            <div class="cocktail-content" id="classic-content">
+                <div class="cocktail-grid">
+                    <div class="cocktail-card">
+                        <h3 class="cocktail-name">Old Fashioned</h3>
+                        <p class="cocktail-ingredients">Bourbon, sugar, bitters, orange twist</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Old Fashioned</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cocktail-card">
+                        <h3 class="cocktail-name">Negroni</h3>
+                        <p class="cocktail-ingredients">Gin, Campari, sweet vermouth</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Negroni</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cocktail-card">
+                        <h3 class="cocktail-name">Mojito</h3>
+                        <p class="cocktail-ingredients">White rum, lime, mint, sugar, soda</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Mojito</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cocktail-card">
+                        <h3 class="cocktail-name">Whiskey Sour</h3>
+                        <p class="cocktail-ingredients">Whiskey, lemon juice, sugar, egg white</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Whiskey Sour</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Авторские коктейли -->
+            <div class="cocktail-content" id="author-content">
+                <div class="cocktail-grid">
+                    <div class="cocktail-card">
+                        <h3 class="cocktail-name">Золотой закат</h3>
+                        <p class="cocktail-ingredients">Водка, апельсиновый сок, гренадин, ликер персика, шампанское</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Золотой закат</div>
+                        </div>
+                    </div>
+
+                    <div class="cocktail-card">
+                        <h3 class="cocktail-name">Московская ночь</h3>
+                        <p class="cocktail-ingredients">Водка, черничный ликер, лайм, тоник, ягоды</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Московская ночь</div>
+                        </div>
+                    </div>
+
+                    <div class="cocktail-card">
+                        <h3 class="cocktail-name">Тропический рай</h3>
+                        <p class="cocktail-ingredients">Ром, кокосовый ликер, ананасовый сок, маракуйя, лайм</p>
+                        <div class="cocktail-image">
+                            <div class="image-placeholder">Фото коктейля Тропический рай</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bar Services -->
+    <section class="process" style="background: var(--dark-gray);">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="gsap-reveal slide-from-bottom">Барные услуги</h2>
+                <p class="gsap-reveal slide-from-bottom" style="text-align: center; color: var(--text-gray); max-width: 800px; margin: 0 auto;">
+                    Полный комплекс барных услуг для вашего мероприятия
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card gsap-reveal slide-from-left">
+                    <h3 class="service-title">Бармен на мероприятие</h3>
+                    <div class="service-price">от 5000 руб./час</div>
+                    <p class="service-description">Профессиональный бармен с полным комплектом оборудования и ингредиентов.</p>
+                    <ul class="service-features">
+                        <li>Опытный бармен</li>
+                        <li>Профессиональное оборудование</li>
+                        <li>Базовый набор ингредиентов</li>
+                        <li>До 5 коктейлей в меню</li>
+                    </ul>
+                </div>
+
+                <div class="service-card gsap-reveal slide-from-bottom">
+                    <h3 class="service-title">Мобильный бар</h3>
+                    <div class="service-price">от 15000 руб.</div>
+                    <p class="service-description">Полноценный бар с широким ассортиментом напитков и коктейлей.</p>
+                    <ul class="service-features">
+                        <li>2 бармена</li>
+                        <li>Широкий ассортимент</li>
+                        <li>Профессиональная стойка</li>
+                        <li>До 10 коктейлей в меню</li>
+                    </ul>
+                </div>
+
+                <div class="service-card gsap-reveal slide-from-right">
+                    <h3 class="service-title">Премиум бар</h3>
+                    <div class="service-price">от 30000 руб.</div>
+                    <p class="service-description">Элитный бар с премиальными напитками и авторскими коктейлями.</p>
+                    <ul class="service-features">
+                        <li>Топовые бармены</li>
+                        <li>Премиальные напитки</li>
+                        <li>Авторские коктейли</li>
+                        <li>Индивидуальное меню</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="gsap-reveal slide-from-bottom">Закажите бар для вашего мероприятия</h2>
+                <p class="gsap-reveal slide-from-bottom" style="text-align: center; color: var(--text-gray); max-width: 600px; margin: 0 auto;">
+                    Подберем оптимальное барное решение specifically для вашего праздника
+                </p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button class="hero-btn gsap-reveal slide-from-bottom" onclick="openWhatsApp('Барные услуги')" style="margin: 0 15px;">
+                    Заказать бар
+                </button>
+                <a href="contacts.html" class="whatsapp-btn gsap-reveal slide-from-bottom" style="padding: 12px 30px; font-size: 1.1rem; margin: 0 15px; text-decoration: none; display: inline-block;">
+                    Консультация бармена
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo gsap-reveal scale-in">Пить и <span>Танцевать</span></div>
+            <p class="footer-text gsap-reveal slide-from-bottom">Создаем незабываемые события под ключ</p>
+            
+            <div class="footer-links">
+                <a href="index.html" class="gsap-reveal slide-from-left">Главная</a>
+                <a href="services.html" class="gsap-reveal slide-from-bottom">Услуги</a>
+                <a href="cocktails.html" class="gsap-reveal slide-from-bottom">Коктейльная карта</a>
+                <a href="kitchen.html" class="gsap-reveal slide-from-bottom">Кухня</a>
+                <a href="portfolio.html" class="gsap-reveal slide-from-bottom">Портфолио</a>
+                <a href="contacts.html" class="gsap-reveal slide-from-right">Контакты</a>
+            </div>
+            
+            <div class="contact-top" style="justify-content: center; margin: 20px 0;">
+                <a href="tel:+79773001608" class="phone-link">+7 977-300-16-08</a>
+            </div>
+            
+            <p class="copyright gsap-reveal slide-from-bottom">© 2023 Пить и Танцевать. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
