@@ -1,1 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши услуги - Пить и Танцевать | Event-агентство</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Пить и <span>Танцевать</span></a>
+            
+            <button class="mobile-menu-btn">☰</button>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html" class="active">Услуги</a></li>
+                    <li><a href="cocktails.html">Коктейльная карта</a></li>
+                    <li><a href="kitchen.html">Кухня</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="contact-top">
+                <a href="tel:+79773001608" class="phone-link">+7 977-300-16-08</a>
+                <button class="whatsapp-btn" onclick="openWhatsApp()">Написать в WhatsApp</button>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero" style="height: 60vh; min-height: 400px;">
+        <div class="container hero-content">
+            <h1 class="gsap-reveal slide-from-bottom">Наши услуги</h1>
+            <p class="gsap-reveal slide-from-bottom">Полный спектр услуг для организации вашего идеального мероприятия любой сложности и масштаба</p>
+        </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="gsap-reveal slide-from-bottom">Основные услуги</h2>
+                <p class="gsap-reveal slide-from-bottom" style="text-align: center; color: var(--text-gray); max-width: 800px; margin: 0 auto;">
+                    Мы предлагаем комплексные решения для мероприятий любого формата - от камерных встреч до масштабных праздников
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card gsap-reveal slide-from-left">
+                    <h3 class="service-title">Тяжелый дым на свадебный танец</h3>
+                    <div class="service-price">от 8000 руб.</div>
+                    <p class="service-description">Создаем волшебную атмосферу для вашего первого танца как супруги. Профессиональное дымовое оборудование и опытный оператор.</p>
+                    <ul class="service-features">
+                        <li>Профессиональное дымовое оборудование</li>
+                        <li>Опытный оператор</li>
+                        <li>Безопасные составы</li>
+                        <li>Индивидуальный сценарий</li>
+                    </ul>
+                    <button class="order-btn" onclick="openWhatsApp('Тяжелый дым на свадебный танец')">Заказать услугу</button>
+                </div>
+                
+                <div class="service-card gsap-reveal slide-from-bottom">
+                    <h3 class="service-title">Пирамида из бокалов с шампанским</h3>
+                    <div class="service-price">от 6000 руб.</div>
+                    <p class="service-description">Эффектная подача шампанского для вашего торжества. Идеально для фотосессий и создания праздничной атмосферы.</p>
+                    <ul class="service-features">
+                        <li>35 бокалов - для небольших мероприятий</li>
+                        <li>55 бокалов - для масштабных праздников</li>
+                        <li>Профессиональная установка</li>
+                        <li>Качественное шампанское</li>
+                    </ul>
+                    <button class="order-btn" onclick="openWhatsApp('Пирамида из бокалов с шампанским')">Заказать услугу</button>
+                </div>
+                
+                <div class="service-card gsap-reveal slide-from-right">
+                    <h3 class="service-title">Коктейльный бар под ключ</h3>
+                    <div class="service-price">от 25000 руб.</div>
+                    <p class="service-description">Полноценный бар с профессиональным барменом и разнообразными коктейлями для вашего идеального мероприятия.</p>
+                    <ul class="service-features">
+                        <li>На выбор от 5 коктейлей</li>
+                        <li>Выезд от 1 бармена</li>
+                        <li>Заказ от 100 позиций</li>
+                        <li>Продолжительность: 3 часа</li>
+                        <li>Профессиональное оборудование</li>
+                    </ul>
+                    <button class="order-btn" onclick="openWhatsApp('Коктейльный бар под ключ')">Заказать услугу</button>
+                </div>
+
+                <div class="service-card gsap-reveal slide-from-left">
+                    <h3 class="service-title">Организация свадеб</h3>
+                    <div class="service-price">от 50000 руб.</div>
+                    <p class="service-description">Полная организация свадебного торжества - от разработки концепции до реализации в день мероприятия.</p>
+                    <ul class="service-features">
+                        <li>Разработка уникальной концепции</li>
+                        <li>Подбор площадки и подрядчиков</li>
+                        <li>Координация в день свадьбы</li>
+                        <li>Тайминг мероприятия</li>
+                    </ul>
+                    <button class="order-btn" onclick="openWhatsApp('Организация свадьбы')">Заказать услугу</button>
+                </div>
+
+                <div class="service-card gsap-reveal slide-from-top">
+                    <h3 class="service-title">Корпоративные мероприятия</h3>
+                    <div class="service-price">от 40000 руб.</div>
+                    <p class="service-description">Организация корпоративов, тимбилдингов, бизнес-встреч и других корпоративных событий.</p>
+                    <ul class="service-features">
+                        <li>Разработка программы</li>
+                        <li>Подбор локации</li>
+                        <li>Кейтеринг и бар</li>
+                        <li>Развлекательная программа</li>
+                    </ul>
+                    <button class="order-btn" onclick="openWhatsApp('Корпоративное мероприятие')">Заказать услугу</button>
+                </div>
+
+                <div class="service-card gsap-reveal slide-from-right">
+                    <h3 class="service-title">Тематические вечеринки</h3>
+                    <div class="service-price">от 35000 руб.</div>
+                    <p class="service-description">Организация вечеринок в любом стиле - от ретро до футуризма, с полным погружением в тематику.</p>
+                    <ul class="service-features">
+                        <li>Разработка концепции</li>
+                        <li>Декор и оформление</li>
+                        <li>Подбор музыки и развлечений</li>
+                        <li>Костюмированная программа</li>
+                    </ul>
+                    <button class="order-btn" onclick="openWhatsApp('Тематическая вечеринка')">Заказать услугу</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="process" style="background: var(--dark-gray);">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="gsap-reveal slide-from-bottom">Дополнительные услуги</h2>
+                <p class="gsap-reveal slide-from-bottom" style="text-align: center; color: var(--text-gray); max-width: 800px; margin: 0 auto;">
+                    Дополнительные опции, которые сделают ваше мероприятие еще более запоминающимся
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card gsap-reveal slide-from-left">
+                    <h3 class="service-title">Фото-зона с реквизитом</h3>
+                    <div class="service-price">от 15000 руб.</div>
+                    <p class="service-description">Стилизованная фото-зона с профессиональным реквизитом для незабываемых снимков.</p>
+                </div>
+
+                <div class="service-card gsap-reveal slide-from-bottom">
+                    <h3 class="service-title">Световое шоу</h3>
+                    <div class="service-price">от 20000 руб.</div>
+                    <p class="service-description">Профессиональное световое оборудование и операторы для создания атмосферного шоу.</p>
+                </div>
+
+                <div class="service-card gsap-reveal slide-from-right">
+                    <h3 class="service-title">Ведущий и DJ</h3>
+                    <div class="service-price">от 25000 руб.</div>
+                    <p class="service-description">Профессиональные ведущие и DJ с подбором музыки под ваше мероприятие.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="gsap-reveal slide-from-bottom">Не нашли нужную услугу?</h2>
+                <p class="gsap-reveal slide-from-bottom" style="text-align: center; color: var(--text-gray); max-width: 600px; margin: 0 auto;">
+                    Мы готовы разработать индивидуальное решение specifically для вашего мероприятия
+                </p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="contacts.html" class="hero-btn gsap-reveal slide-from-bottom" style="margin: 0 15px;">Обсудить проект</a>
+                <button class="whatsapp-btn gsap-reveal slide-from-bottom" onclick="openWhatsApp('Консультация по услугам')" style="padding: 12px 30px; font-size: 1.1rem; margin: 0 15px;">
+                    Бесплатная консультация
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo gsap-reveal scale-in">Пить и <span>Танцевать</span></div>
+            <p class="footer-text gsap-reveal slide-from-bottom">Создаем незабываемые события под ключ</p>
+            
+            <div class="footer-links">
+                <a href="index.html" class="gsap-reveal slide-from-left">Главная</a>
+                <a href="services.html" class="gsap-reveal slide-from-bottom">Услуги</a>
+                <a href="cocktails.html" class="gsap-reveal slide-from-bottom">Коктейльная карта</a>
+                <a href="kitchen.html" class="gsap-reveal slide-from-bottom">Кухня</a>
+                <a href="portfolio.html" class="gsap-reveal slide-from-bottom">Портфолио</a>
+                <a href="contacts.html" class="gsap-reveal slide-from-right">Контакты</a>
+            </div>
+            
+            <div class="contact-top" style="justify-content: center; margin: 20px 0;">
+                <a href="tel:+79773001608" class="phone-link">+7 977-300-16-08</a>
+            </div>
+            
+            <p class="copyright gsap-reveal slide-from-bottom">© 2023 Пить и Танцевать. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
