@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пить и Танцевать - Event-агентство | Главная</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Пить и <span>Танцевать</span></a>
+            
+            <button class="mobile-menu-btn">☰</button>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="cocktails.html">Коктейльная карта</a></li>
+                    <li><a href="kitchen.html">Кухня</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="contact-top">
+                <a href="tel:+79773001608" class="phone-link">+7 977-300-16-08</a>
+                <button class="whatsapp-btn" onclick="openWhatsApp()">Написать в WhatsApp</button>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 class="gsap-reveal slide-from-bottom">Event-агентство | праздничные услуги Пить и Танцевать</h1>
+            <p class="gsap-reveal slide-from-bottom">Создаем незабываемые события под ключ! Свадьбы, корпоративы, вечеринки и многое другое.</p>
+            <a href="services.html" class="hero-btn gsap-reveal slide-from-bottom">Наши услуги</a>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section id="services-preview" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="gsap-reveal slide-from-bottom">Наши услуги</h2>
+                <p class="gsap-reveal slide-from-bottom" style="text-align: center; color: var(--text-gray); max-width: 600px; margin: 0 auto;">
+                    Полный спектр услуг для организации вашего идеального мероприятия
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card gsap-reveal slide-from-left">
+                    <h3 class="service-title">Тяжелый дым на свадебный танец</h3>
+                    <div class="service-price">от 8000 руб.</div>
+                    <p class="service-description">Создаем волшебную атмосферу для вашего первого танца как супруги с профессиональным дымовым оборудованием</p>
+                    <button class="order-btn" onclick="openWhatsApp('Тяжелый дым на свадебный танец')">Заказать</button>
+                </div>
+                
+                <div class="service-card gsap-reveal slide-from-bottom">
+                    <h3 class="service-title">Пирамида из бокалов с шампанским</h3>
+                    <div class="service-price">от 6000 руб.</div>
+                    <p class="service-description">Эффектная подача шампанского для вашего торжества. Идеально для фотосессий и создания праздничной атмосферы</p>
+                    <button class="order-btn" onclick="openWhatsApp('Пирамида из бокалов с шампанским')">Заказать</button>
+                </div>
+                
+                <div class="service-card gsap-reveal slide-from-right">
+                    <h3 class="service-title">Коктейльный бар под ключ</h3>
+                    <div class="service-price">от 25000 руб.</div>
+                    <p class="service-description">Полноценный бар с профессиональным барменом и разнообразными коктейлями для вашего идеального мероприятия</p>
+                    <button class="order-btn" onclick="openWhatsApp('Коктейльный бар под ключ')">Заказать</button>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="services.html" class="hero-btn">Все услуги</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="gsap-reveal slide-from-bottom">Наш процесс</h2>
+                <p class="gsap-reveal slide-from-bottom" style="text-align: center; color: var(--text-gray); max-width: 600px; margin: 0 auto;">
+                    4 простых шага к вашему идеальному мероприятию
+                </p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step gsap-reveal slide-from-left">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Консультация</h3>
+                    <p class="step-description">Обсуждаем ваши пожелания, бюджет и особенности мероприятия. Подбираем оптимальные решения для вашего события.</p>
+                </div>
+                
+                <div class="process-step gsap-reveal slide-from-bottom">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Концепция</h3>
+                    <p class="step-description">Разрабатываем уникальную концепцию и тематику вашего события. Создаем дизайн-проект и подбираем оформление.</p>
+                </div>
+                
+                <div class="process-step gsap-reveal slide-from-bottom">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Планирование</h3>
+                    <p class="step-description">Составляем детальный план и подбираем все необходимые услуги. Координируем работу всех подрядчиков.</p>
+                </div>
+                
+                <div class="process-step gsap-reveal slide-from-right">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Реализация</h3>
+                    <p class="step-description">Организуем и проводим мероприятие, контролируя все процессы. Обеспечиваем безупречное исполнение вашего праздника.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact" style="background: var(--dark-gray);">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="gsap-reveal slide-from-bottom">Готовы начать?</h2>
+                <p class="gsap-reveal slide-from-bottom" style="text-align: center; color: var(--text-gray); max-width: 600px; margin: 0 auto;">
+                    Свяжитесь с нами для бесплатной консультации и мы поможем организовать ваш идеальный праздник
+                </p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="contacts.html" class="hero-btn gsap-reveal slide-from-bottom" style="margin: 0 15px;">Связаться с нами</a>
+                <button class="whatsapp-btn gsap-reveal slide-from-bottom" onclick="openWhatsApp()" style="padding: 12px 30px; font-size: 1.1rem; margin: 0 15px;">
+                    Написать в WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo gsap-reveal scale-in">Пить и <span>Танцевать</span></div>
+            <p class="footer-text gsap-reveal slide-from-bottom">Создаем незабываемые события под ключ</p>
+            
+            <div class="footer-links">
+                <a href="index.html" class="gsap-reveal slide-from-left">Главная</a>
+                <a href="services.html" class="gsap-reveal slide-from-bottom">Услуги</a>
+                <a href="cocktails.html" class="gsap-reveal slide-from-bottom">Коктейльная карта</a>
+                <a href="kitchen.html" class="gsap-reveal slide-from-bottom">Кухня</a>
+                <a href="portfolio.html" class="gsap-reveal slide-from-bottom">Портфолио</a>
+                <a href="contacts.html" class="gsap-reveal slide-from-right">Контакты</a>
+            </div>
+            
+            <div class="contact-top" style="justify-content: center; margin: 20px 0;">
+                <a href="tel:+79773001608" class="phone-link">+7 977-300-16-08</a>
+            </div>
+            
+            <p class="copyright gsap-reveal slide-from-bottom">© 2023 Пить и Танцевать. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
